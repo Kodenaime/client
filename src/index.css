@@ -14,12 +14,27 @@
 
 :root {
   --primary-color: orangered;
+  --white-color: whitesmoke;
+  --color-bg: hsla(220, 20%, 97%, 1);
+  --color-gray1: hsla(0, 0%, 100%, 0.7);
+  --color-gray2: hsla(220, 12%, 43%, 1);
+  --color-gray3: hsla(222, 23%, 71%, 0.2);
+  --color-gray4: hsla(218, 22%, 26%, 1);
+  
+  --container-lg: 85%;
+  --container-md: 92%;
+  --form-width: 50%;
+
+  --transition: all 400ms ease;
 }
 
 body {
   font-family: 'Montserrat';
   line-height: 1.6;
   scroll-behavior: smooth;
+  background: var(--color-bg);
+  font-size: 1rem;
+  color: var(--color-gray4);
 }
 
 img {
