@@ -11,19 +11,19 @@ const Header = () => {
         <Link to="/" className='logo'>
           <img src={logo} alt="logo of the website" />
         </Link>
+      
+
+        <ul className="nav-menu">
+          <li><Link to="/profile">Kode</Link></li>
+          <li><Link to="/create">Create Post</Link></li>
+          <li><Link to="/authors">Authors</Link></li>
+          <li><Link to="/logout">Logout</Link></li>
+        </ul>
+
+        <button className="toggle-btn">
+          <FaBarsProgress />
+        </button>
       </div>
-
-      <ul className="nav-menu">
-        <li><Link to="/profile">Kode</Link></li>
-        <li><Link to="/create">Create Post</Link></li>
-        <li><Link to="/authors">Authors</Link></li>
-        <li><Link to="/logout">Logout</Link></li>
-      </ul>
-
-      <button className="toggle-btn">
-        <FaBarsProgress />
-      </button>
-
     </nav>
   )
 }
