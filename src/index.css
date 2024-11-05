@@ -22,10 +22,12 @@
   --color-gray3: hsla(222, 23%, 71%, 0.2);
   --color-gray4: hsla(218, 22%, 26%, 1);
   --color-black: #444;
+  --color-blue: #1098F7;
   
   --container-lg: 85%;
   --container-md: 92%;
   --form-width: 50%;
+  --blog-width: 65%;
 
   --transition: all 400ms ease;
 }
@@ -103,8 +105,8 @@ section {
 }
 
 .btn.primary {
-  background: var(--color-bg);
-  color: var(--primary-color);
+  background: rgba(16, 152, 247, 0.4);
+  color: var(--white);
 }
 
 .btn.category {
@@ -273,11 +275,13 @@ footer {
   margin-bottom: -2rem;
 }
 
+/*-----------HOME STYLES BEGIN------------------------*\
+
 /*-----------------------------------*\
   #POSTS PAGE STYLES
 \*-----------------------------------*/
 
-.posts-container {
+.posts-container, .authorposts-container, .categoryposts-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 3.5rem;
@@ -328,4 +332,42 @@ footer {
   aspect-ratio: 1/1;
   border-radius: 0.6rem;
   overflow: hidden;
+}
+
+
+
+
+
+/*-----------------------------------*\
+  #POST DETAIL STYLES
+\*-----------------------------------*/
+
+.post-detail {
+  width: var(--blog-width);
+  background: var(--white);
+  margin-inline: auto;
+  padding: 2rem 0;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.detail-btns {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.detail-image {
+  margin: 1rem 0;
+  height: fit-content;
+  max-height: 30rem;
+  overflow: hidden;
+}
+
+.post-detail p {
+  margin-bottom: 1rem;
 }

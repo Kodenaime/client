@@ -1,12 +1,10 @@
-import React, { useState } from 'react'
+import thumb1 from './Assets/blog10.jpg'
+import thumb2 from './Assets/blog9.jpg'
+import thumb3 from './Assets/blog17.jpg'
+import thumb4 from './Assets/blog45.jpg'
 
-import PostItem from './PostItem'
-import thumb1 from '../Assets/blog10.jpg'
-import thumb2 from '../Assets/blog9.jpg'
-import thumb3 from '../Assets/blog17.jpg'
-import thumb4 from '../Assets/blog45.jpg'
 
- const DUMMY =  [
+export const DUMMY =  [
     {
         id: '1',
         thumbnail: thumb1,
@@ -39,24 +37,4 @@ import thumb4 from '../Assets/blog45.jpg'
         desc: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum accusantium odio atque ex aliquid laboriosam.',
         authorID: 11
     },
-]
-
-const Posts = () => {
-
-    const [posts, setPosts] = useState(DUMMY)
-
-  return (
-    <section className="posts">
-        <div className="container posts-container">
-        {
-            posts.map(({id, thumbnail, category, title, desc, authorID}) =>
-            <PostItem key={id} postID={id} thumbnail={thumbnail} title={title} 
-            category={category} desc={desc} authorID={authorID} />)
-        }
-        </div>
-        {/* { posts.lenght > 0 ? : <h2>No Post Yet</h2> } */}
-    </section>
-  )
-}
-
-export default Posts
+] 
