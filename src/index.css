@@ -114,7 +114,7 @@ section {
 }
 
 .btn.white {
-  background: var(--white-color);
+  background: var(--white);
   color: var(--primary-color);
 }
 
@@ -391,7 +391,7 @@ footer {
   margin-top: 10rem;
 }
 
-.reg-container, .create-post, .login-container {
+.reg-container, .login-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 3rem;
@@ -400,6 +400,16 @@ footer {
   /* padding: 4rem 2rem; */
   border-radius: 1rem;
   
+}
+
+.create-post {
+  width: 68%;
+  margin-inline: auto;
+  display: grid;
+  place-items: center;
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 0.5rem;
 }
 
 .reg-left, .login-right {
@@ -417,13 +427,20 @@ footer {
   margin-bottom: 0.6rem;
 }
 
-.form {
+.form, .former {
   display: flex;
   flex-direction: column;
   gap: 1rem;
 }
 
 input, select, textarea {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.6rem;
+  background: var(--white-color);
+}
+
+.new {
   width: 100%;
   padding: 1rem;
   border-radius: 0.6rem;
@@ -450,7 +467,13 @@ input, select, textarea {
   border-radius: 0 2rem 2rem 0;
 }
 
+/* text area from react quill styles  */
 
+.ql-editor {
+  overflow: scroll;
+  height: 10rem !important;
+  background: var(--white);
+}
 
 /*-----------------------------------*\
   #AURTHORS PAGE STYLES
@@ -529,7 +552,7 @@ input, select, textarea {
 .avatar-btn {
   cursor: pointer;
   padding: 0;
-  font-size: 2rem;
+  font-size: 1.4rem;
   background: var(--primary-color);
 }
 
@@ -537,8 +560,50 @@ input, select, textarea {
   margin-top: 1.5rem;
 }
 
-.form.profile-form {
+.former.profile-former {
   margin-top: 3rem;
   margin-inline: auto;
   width: var(--form-width);
+}
+
+
+
+
+/*-----------------------------------*\
+  #DASHBOARD PAGE STYLES
+\*-----------------------------------*/
+
+
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.dashboard-post {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  background: var(--white);
+  padding: 0.6rem 1.2rem;
+  border-radius: 0.8rem;
+}
+
+.dashboard-left {
+  display: flex;
+  gap: 1.7rem;
+  width: 100%;
+  align-items: center;
+}
+
+.dashboard-image {
+  width: 4rem;
+  border-radius: 0.7rem;
+  overflow: hidden;
+}
+
+.dashboard-right {
+  display: flex;
+  gap: 1rem;
 }

@@ -29,7 +29,7 @@ const Login = () => {
           <form action="" className="form register-form">          
               <p className="form-error">This is an error</p>
               
-              <input type="email" placeholder="Email" name='email' value={userData.email} onChange={changeInput}/>
+              <input type="email" placeholder="Email" name='email' value={userData.email} onChange={changeInput} autoFocus/>
               <input type="password" placeholder="Password" name='password' value={userData.password} onChange={changeInput}/>
             
               <button type='submit' className='btn'>Login</button>
